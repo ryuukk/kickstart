@@ -1,15 +1,24 @@
 {
-	"authors": [
-		"ryuukk"
-	],
-	"copyright": "Copyright © 2023, ryuukk",
-	"description": "A minimal D application.",
-	"license": "public-domain",
 	"name": "kickstart",
 	"dependencies": {
-		"bindbc-sdl": "~>1.4.2"
+		"bindbc-sdl": "~>1.4.2",
 	},
 	"subConfigurations": {
-		"bindbc-sdl": "staticBC",
-	}
+		"bindbc-sdl": "staticBC"
+	},
+    "configurations": [
+        {
+            "name": "kickstart",
+            "targetType": "executable"
+        },
+        {
+            "name": "unittest",
+            "dependencies": {
+                "silly": "~>1.1.1"
+            },
+            "excludedSourceFiles": [
+                "source/app.d"
+            ]
+        }
+    ]
 }
