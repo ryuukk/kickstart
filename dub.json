@@ -1,0 +1,15 @@
+{
+	"authors": [
+		"ryuukk"
+	],
+	"copyright": "Copyright © 2023, ryuukk",
+	"description": "A minimal D application.",
+	"license": "public-domain",
+	"name": "kickstart",
+	"dependencies": {
+		"bindbc-sdl": "~>1.4.2"
+	},
+	"subConfigurations": {
+		"bindbc-sdl": "staticBC",
+	}
+}
